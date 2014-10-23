@@ -3,11 +3,11 @@ Unity-Chan "Candy Rock Star" Public Repository
 
 ![Screenshot][Screenshot]
 
-[WebPlayer Demo][WebPlayer] / [Watch on YouTube][YouTube]
+[Web Player Demo][WebPlayer] / [Watch on YouTube][YouTube]
 
+- See [README_EN.txt][Readme EN] for further information.
 - 日本語の説明は[README_JP.txt][Readme JP]をご覧ください。
 - 技術的な解説は[Wiki][Wiki]をご覧ください。
-- See [README_EN.txt][Readme EN] for further information.
 
 [Screenshot]: http://unity-chan.com/blog/wp-content/uploads/2014/08/uniteinthesky_ss.jpg
 [WebPlayer]:  http://unity-chan.com/events/c86/WebPlayer/
