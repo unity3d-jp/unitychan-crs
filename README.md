@@ -1,13 +1,9 @@
 Unity-Chan "Candy Rock Star" Public Repository
-==============================================
+----------------------------------------------
 
 ![Screenshot][Screenshot]
 
-- [WebPlayer Demo][WebPlayer]
-- [Watch on YouTube][YouTube]
-
-Description
------------
+[WebPlayer Demo][WebPlayer] / [Watch on YouTube][YouTube]
 
 - 日本語の説明は[README_JP.txt][Readme JP]をご覧ください。
 - 技術的な解説は[Wiki][Wiki]をご覧ください。
