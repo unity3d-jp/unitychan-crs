@@ -88,14 +88,14 @@ public class StageDirector : MonoBehaviour
     {
         if (!ignoreFastForward)
         {
-            FastForward(GetComponent<Animator>(), second, 0);
+            FastForwardAnimator(GetComponent<Animator>(), second, 0);
             foreach (var go in objectsOnTimeline)
                 foreach (var animator in go.GetComponentsInChildren<Animator>())
-                    FastForward(animator, second, 0.5f);
+                    FastForwardAnimator(animator, second, 0.5f);
         }
     }
 
-    void FastForward(Animator animator, float second, float crossfade)
+    void FastForwardAnimator(Animator animator, float second, float crossfade)
     {
         for (var layer = 0; layer < animator.layerCount; layer++)
         {
