@@ -1,0 +1,160 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>%UNITY_WEB_NAME%</title>
+    %UNITY_UNITYOBJECT_DEPENDENCIES%
+    <script type="text/javascript">
+        <!--
+        var unityObjectUrl = "%UNITY_UNITYOBJECT_URL%";
+        if (document.location.protocol == 'https:')
+            unityObjectUrl = unityObjectUrl.replace("http://", "https://ssl-");
+        document.write('<script type="text\/javascript" src="' + unityObjectUrl + '"><\/script>');
+        jQuery(function(){if((navigator.browserLanguage||navigator.language||navigator.userLanguage).substr(0,2)==="ja")$(".ja").show();else $(".en").show()})
+        -->
+    </script>
+    <script type="text/javascript">
+        <!--
+        var config = {
+                    width: %UNITY_WIDTH%,
+                height: %UNITY_HEIGHT%,
+                params: %UNITY_PLAYER_PARAMS%
+        %UNITY_SET_BASE_DOWNLOAD_URL%
+        };
+        config.params["logoimage"] = "license_logo_dark.png";
+        var u = new UnityObject2(config);
+
+        jQuery(function() {
+
+            var $missingScreen = jQuery("#unityPlayer").find(".missing");
+            var $brokenScreen = jQuery("#unityPlayer").find(".broken");
+            $missingScreen.hide();
+            $brokenScreen.hide();
+
+            u.observeProgress(function (progress) {
+                switch(progress.pluginStatus) {
+                    case "broken":
+                        $brokenScreen.find("a").click(function (e) {
+                            e.stopPropagation();
+                            e.preventDefault();
+                            u.installPlugin();
+                            return false;
+                        });
+                        $brokenScreen.show();
+                        break;
+                    case "missing":
+                        $missingScreen.find("a").click(function (e) {
+                            e.stopPropagation();
+                            e.preventDefault();
+                            u.installPlugin();
+                            return false;
+                        });
+                        $missingScreen.show();
+                        break;
+                    case "installed":
+                        $missingScreen.remove();
+                        break;
+                    case "first":
+                        break;
+                }
+            });
+            u.initPlugin(jQuery("#unityPlayer")[0], "%UNITY_WEB_PATH%");
+        });
+        -->
+    </script>
+    <style type="text/css">
+        body{background:url(cover.jpg) no-repeat;background-color:#222;background-size:cover;-moz-background-size:cover;background-repeat:no-repeat;background-position:50% 50%}body .logo>img{width: 235px}body .content .share{margin-top:14px;float:right}body .content .share div{display:inline-block}body .content .share .fb_iframe_widget{top:-3px}body .content .share .twitter-share-button{width:105px!important}body .license{width:960px;margin:auto}body .clear{clear:both}body .en,body .ja{display:none}body #licenselogo>img{width: 140px;}</style>
+    <style type="text/css">
+            <!--
+            body {
+                font-family: Helvetica, Verdana, Arial, sans-serif;
+                color: white;
+                text-align: center;
+                margin: 0;
+                padding: 0;
+            }
+            a:link, a:visited {
+                color: #bfbfbf;
+            }
+            a:active, a:hover {
+                color: #bfbfbf;
+            }
+            p.footer {
+                font-size: x-small;
+            }
+            div.content {
+                margin: auto;
+                width: %UNITY_WIDTH%px;
+            }
+            div.broken,
+            div.missing {
+                margin: auto;
+                position: relative;
+                top: 50%;
+                width: 193px;
+            }
+            div.broken a,
+            div.missing a {
+                height: 63px;
+                position: relative;
+                top: -31px;
+            }
+            div.broken img,
+            div.missing img {
+                border-width: 0px;
+            }
+            div.broken {
+                display: none;
+            }
+            div#unityPlayer {
+                cursor: default;
+                height: %UNITY_HEIGHT%px;
+                width: %UNITY_WIDTH%px;
+            }
+            -->
+		</style>
+	</head>
+    <body>
+        <div class="logo"><img src="logo.png" alt=""/></div>
+
+        <div class="content">
+            <div id="unityPlayer">
+                <div class="missing">
+                    <a href="http://unity3d.com/webplayer/" title="Unity Web Player. Install now!">
+                        <img alt="Unity Web Player. Install now!" src="http://webplayer.unity3d.com/installation/getunity.png" width="193" height="63" />
+                    </a>
+                </div>
+                <div class="broken">
+                    <a href="http://unity3d.com/webplayer/" title="Unity Web Player. Install now! Restart your browser after install.">
+                        <img alt="Unity Web Player. Install now! Restart your browser after install." src="http://webplayer.unity3d.com/installation/getunityrestart.png" width="193" height="63" />
+                    </a>
+                </div>
+            </div>
+
+            <div class="share">
+
+                <!-- Twitter -->
+                <div>
+                    <a href="https://twitter.com/share" class="twitter-share-button" data-lang="ja">ツイート</a>
+                    <script>!function(e,t,n){var r,i=e.getElementsByTagName(t)[0],s=/^http:/.test(e.location)?"http":"https";if(!e.getElementById(n)){r=e.createElement(t);r.id=n;r.src=s+"://platform.twitter.com/widgets.js";i.parentNode.insertBefore(r,i)}}(document,"script","twitter-wjs")</script>
+                </div>
+
+                <!-- Facebook -->
+                <div>
+                    <span class="fb-like" data-layout="button_count" data-action="like" data-show-faces="false" data-share="true"></span>
+                    <script>(function(e,t,n){var r,i=e.getElementsByTagName(t)[0];if(e.getElementById(n))return;r=e.createElement(t);r.id=n;r.src="//connect.facebook.net/ja_JP/all.js#xfbml=1";i.parentNode.insertBefore(r,i)})(document,"script","facebook-jssdk")</script>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="clear"></div>
+
+        <div class="license">
+            <div id="licenselogo"><img src="license_logo.png" alt=""/></div>
+            <p class="ja">このコンテンツの一部には『<a href="http://unity-chan.com/download/license.html" target="_blank">ユニティちゃんライセンス</a>』で許諾されたアセットが使用されています。</p>
+            <p class="en">Portions of this work are licensed under <a href="http://unity-chan.com/download/license_en.html" target="_blank">Unity-Chan License</a></p>
+        </div>
+        <p class="footer">&laquo; created with <a href="http://japan.unity3d.com/" title="Go to unity3d.com">Unity</a> &raquo;</p>
+    </body>
+</html>

@@ -1,0 +1,99 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Visualizer
+  m_Shader: {fileID: 4800000, guid: 0c970e28e6d6d49d2851508602013745, type: 3}
+  m_ShaderKeywords: []
+  m_CustomRenderQueue: -1
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+      data:
+        first:
+          name: _MainTex
+        second:
+          m_Texture: {fileID: 2800000, guid: ac31a65b3fef9446297e80e94aa4e109, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _ReflectionTex
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+    m_Floats:
+      data:
+        first:
+          name: _RingSrtide
+        second: .200000003
+      data:
+        first:
+          name: _RingThicknessMin
+        second: .100000001
+      data:
+        first:
+          name: _RingThicknessMax
+        second: .5
+      data:
+        first:
+          name: _RingEmission
+        second: 10
+      data:
+        first:
+          name: _RingSpeedMin
+        second: .200000003
+      data:
+        first:
+          name: _RingSpeedMax
+        second: .5
+      data:
+        first:
+          name: _GridEmission
+        second: 8
+      data:
+        first:
+          name: _ReflectionStrength
+        second: .200000003
+      data:
+        first:
+          name: _Stride
+        second: .200000003
+      data:
+        first:
+          name: _ThicknessMin
+        second: .150000006
+      data:
+        first:
+          name: _ThicknessMax
+        second: .449999988
+      data:
+        first:
+          name: _EmissionStrength
+        second: 10
+      data:
+        first:
+          name: _TrailsEmission
+        second: 10
+    m_Colors:
+      data:
+        first:
+          name: _Color
+        second: {r: 1, g: 1, b: 1, a: 1}
+      data:
+        first:
+          name: _Spectra
+        second: {r: .214314744, g: 0, b: 0, a: .887210548}
+      data:
+        first:
+          name: _Center
+        second: {r: 0, g: 0, b: 0, a: 1}
+      data:
+        first:
+          name: _GridColor
+        second: {r: .200000003, g: .300000012, b: .5, a: 1}

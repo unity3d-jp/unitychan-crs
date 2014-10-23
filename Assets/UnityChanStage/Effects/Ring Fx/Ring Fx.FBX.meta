@@ -1,0 +1,283 @@
+fileFormatVersion: 2
+guid: 8f2956552bc23405eac135b8c3bf7f69
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: Cylinder003
+    100002: Cylinder004
+    100004: Cylinder005
+    100006: Cylinder006
+    100008: Cylinder007
+    100010: Cylinder008
+    100012: Cylinder009
+    100014: Cylinder010
+    100016: Cylinder011
+    100018: Cylinder012
+    100020: Cylinder013
+    100022: J_light_01
+    100024: J_light_02
+    100026: J_light_03
+    100028: J_light_04
+    100030: J_wave_in
+    100032: J_wave_out
+    100034: Ring
+    100036: //RootNode
+    100038: stage_ringEffect_01
+    100040: UnityAxis
+    100042: wave_01
+    400000: Cylinder003
+    400002: Cylinder004
+    400004: Cylinder005
+    400006: Cylinder006
+    400008: Cylinder007
+    400010: Cylinder008
+    400012: Cylinder009
+    400014: Cylinder010
+    400016: Cylinder011
+    400018: Cylinder012
+    400020: Cylinder013
+    400022: J_light_01
+    400024: J_light_02
+    400026: J_light_03
+    400028: J_light_04
+    400030: J_wave_in
+    400032: J_wave_out
+    400034: Ring
+    400036: //RootNode
+    400038: stage_ringEffect_01
+    400040: UnityAxis
+    400042: wave_01
+    2300000: Cylinder003
+    2300002: Cylinder004
+    2300004: Cylinder005
+    2300006: Cylinder006
+    2300008: Cylinder007
+    2300010: Cylinder008
+    2300012: Cylinder009
+    2300014: Cylinder010
+    2300016: Cylinder011
+    2300018: Cylinder012
+    2300020: Cylinder013
+    3300000: Cylinder003
+    3300002: Cylinder004
+    3300004: Cylinder005
+    3300006: Cylinder006
+    3300008: Cylinder007
+    3300010: Cylinder008
+    3300012: Cylinder009
+    3300014: Cylinder010
+    3300016: Cylinder011
+    3300018: Cylinder012
+    3300020: Cylinder013
+    4300000: Ring
+    4300002: Cylinder003
+    4300004: Cylinder004
+    4300006: Cylinder005
+    4300008: Cylinder006
+    4300010: Cylinder007
+    4300012: Cylinder008
+    4300014: Cylinder009
+    4300016: Cylinder010
+    4300018: Cylinder011
+    4300020: Cylinder012
+    4300022: Cylinder013
+    4300024: wave_01
+    7400000: Small
+    7400002: Large
+    9500000: //RootNode
+    13700000: Ring
+    13700002: wave_01
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Small
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 12
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: stage_ringEffect_01
+        weight: 1
+      - path: stage_ringEffect_01/Cylinder003
+        weight: 1
+      - path: stage_ringEffect_01/Cylinder004
+        weight: 1
+      - path: stage_ringEffect_01/Cylinder005
+        weight: 1
+      - path: stage_ringEffect_01/Cylinder006
+        weight: 1
+      - path: stage_ringEffect_01/Cylinder007
+        weight: 1
+      - path: stage_ringEffect_01/Cylinder008
+        weight: 1
+      - path: stage_ringEffect_01/Cylinder009
+        weight: 1
+      - path: stage_ringEffect_01/Cylinder010
+        weight: 1
+      - path: stage_ringEffect_01/Cylinder011
+        weight: 1
+      - path: stage_ringEffect_01/Cylinder012
+        weight: 1
+      - path: stage_ringEffect_01/Cylinder013
+        weight: 1
+      - path: stage_ringEffect_01/J_light_01
+        weight: 1
+      - path: stage_ringEffect_01/J_light_02
+        weight: 1
+      - path: stage_ringEffect_01/J_light_03
+        weight: 1
+      - path: stage_ringEffect_01/J_light_04
+        weight: 1
+      - path: stage_ringEffect_01/J_wave_in
+        weight: 1
+      - path: stage_ringEffect_01/J_wave_out
+        weight: 1
+      - path: stage_ringEffect_01/Ring
+        weight: 1
+      - path: stage_ringEffect_01/wave_01
+        weight: 1
+      - path: UnityAxis
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Large
+      takeName: Take 001
+      firstFrame: 12
+      lastFrame: 24
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: stage_ringEffect_01
+        weight: 1
+      - path: stage_ringEffect_01/Cylinder003
+        weight: 1
+      - path: stage_ringEffect_01/Cylinder004
+        weight: 1
+      - path: stage_ringEffect_01/Cylinder005
+        weight: 1
+      - path: stage_ringEffect_01/Cylinder006
+        weight: 1
+      - path: stage_ringEffect_01/Cylinder007
+        weight: 1
+      - path: stage_ringEffect_01/Cylinder008
+        weight: 1
+      - path: stage_ringEffect_01/Cylinder009
+        weight: 1
+      - path: stage_ringEffect_01/Cylinder010
+        weight: 1
+      - path: stage_ringEffect_01/Cylinder011
+        weight: 1
+      - path: stage_ringEffect_01/Cylinder012
+        weight: 1
+      - path: stage_ringEffect_01/Cylinder013
+        weight: 1
+      - path: stage_ringEffect_01/J_light_01
+        weight: 1
+      - path: stage_ringEffect_01/J_light_02
+        weight: 1
+      - path: stage_ringEffect_01/J_light_03
+        weight: 1
+      - path: stage_ringEffect_01/J_light_04
+        weight: 1
+      - path: stage_ringEffect_01/J_wave_in
+        weight: 1
+      - path: stage_ringEffect_01/J_wave_out
+        weight: 1
+      - path: stage_ringEffect_01/Ring
+        weight: 1
+      - path: stage_ringEffect_01/wave_01
+        weight: 1
+      - path: UnityAxis
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: stage_ringEffect_01
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 

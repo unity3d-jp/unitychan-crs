@@ -1,0 +1,521 @@
+fileFormatVersion: 2
+guid: a781cecdb1e8145c3afcb43f4bcb646d
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Beem
+    100004: frag01
+    100006: frag017
+    100008: frag018
+    100010: frag019
+    100012: frag020
+    100014: frag021
+    100016: frag022
+    100018: frag023
+    100020: frag024
+    100022: frag025
+    100024: frag026
+    100026: frag07
+    100028: frag08
+    100030: frag09
+    100032: frag10
+    100034: frag11
+    100036: frag12
+    100038: frag13
+    100040: frag14
+    100042: frag15
+    100044: frag16
+    100046: J_light_05
+    100048: J_wave_in
+    100050: J_wave_in2
+    100052: J_wave_out
+    100054: J_wave_out2
+    100056: Sphere001
+    100058: Sphere002
+    100060: Sphere003
+    100062: Sphere004
+    100064: Sphere005
+    100066: stage_beemEffect_01
+    100068: UnityAxis
+    100070: wave_002
+    100072: wave_01
+    400000: //RootNode
+    400002: Beem
+    400004: frag01
+    400006: frag017
+    400008: frag018
+    400010: frag019
+    400012: frag020
+    400014: frag021
+    400016: frag022
+    400018: frag023
+    400020: frag024
+    400022: frag025
+    400024: frag026
+    400026: frag07
+    400028: frag08
+    400030: frag09
+    400032: frag10
+    400034: frag11
+    400036: frag12
+    400038: frag13
+    400040: frag14
+    400042: frag15
+    400044: frag16
+    400046: J_light_05
+    400048: J_wave_in
+    400050: J_wave_in2
+    400052: J_wave_out
+    400054: J_wave_out2
+    400056: Sphere001
+    400058: Sphere002
+    400060: Sphere003
+    400062: Sphere004
+    400064: Sphere005
+    400066: stage_beemEffect_01
+    400068: UnityAxis
+    400070: wave_002
+    400072: wave_01
+    2300000: frag01
+    2300002: frag017
+    2300004: frag018
+    2300006: frag019
+    2300008: frag020
+    2300010: frag021
+    2300012: frag022
+    2300014: frag023
+    2300016: frag024
+    2300018: frag025
+    2300020: frag026
+    2300022: frag07
+    2300024: frag08
+    2300026: frag09
+    2300028: frag10
+    2300030: frag11
+    2300032: frag12
+    2300034: frag13
+    2300036: frag14
+    2300038: frag15
+    2300040: frag16
+    2300042: Sphere001
+    2300044: Sphere002
+    2300046: Sphere003
+    2300048: Sphere004
+    2300050: Sphere005
+    3300000: frag01
+    3300002: frag017
+    3300004: frag018
+    3300006: frag019
+    3300008: frag020
+    3300010: frag021
+    3300012: frag022
+    3300014: frag023
+    3300016: frag024
+    3300018: frag025
+    3300020: frag026
+    3300022: frag07
+    3300024: frag08
+    3300026: frag09
+    3300028: frag10
+    3300030: frag11
+    3300032: frag12
+    3300034: frag13
+    3300036: frag14
+    3300038: frag15
+    3300040: frag16
+    3300042: Sphere001
+    3300044: Sphere002
+    3300046: Sphere003
+    3300048: Sphere004
+    3300050: Sphere005
+    4300000: Beem
+    4300002: Sphere001
+    4300004: Sphere002
+    4300006: Sphere003
+    4300008: Sphere004
+    4300010: wave_01
+    4300012: wave_002
+    4300014: frag01
+    4300016: Sphere005
+    4300018: frag16
+    4300020: frag15
+    4300022: frag14
+    4300024: frag13
+    4300026: frag12
+    4300028: frag11
+    4300030: frag10
+    4300032: frag09
+    4300034: frag08
+    4300036: frag07
+    4300038: frag017
+    4300040: frag018
+    4300042: frag019
+    4300044: frag020
+    4300046: frag021
+    4300048: frag022
+    4300050: frag023
+    4300052: frag024
+    4300054: frag025
+    4300056: frag026
+    7400000: Start
+    7400002: Stay
+    7400004: End
+    9500000: //RootNode
+    13700000: Beem
+    13700002: wave_002
+    13700004: wave_01
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Start
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 15
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: stage_beemEffect_01
+        weight: 1
+      - path: stage_beemEffect_01/Beem
+        weight: 1
+      - path: stage_beemEffect_01/frag01
+        weight: 1
+      - path: stage_beemEffect_01/frag07
+        weight: 1
+      - path: stage_beemEffect_01/frag08
+        weight: 1
+      - path: stage_beemEffect_01/frag09
+        weight: 1
+      - path: stage_beemEffect_01/frag10
+        weight: 1
+      - path: stage_beemEffect_01/frag11
+        weight: 1
+      - path: stage_beemEffect_01/frag12
+        weight: 1
+      - path: stage_beemEffect_01/frag13
+        weight: 1
+      - path: stage_beemEffect_01/frag14
+        weight: 1
+      - path: stage_beemEffect_01/frag15
+        weight: 1
+      - path: stage_beemEffect_01/frag16
+        weight: 1
+      - path: stage_beemEffect_01/frag017
+        weight: 1
+      - path: stage_beemEffect_01/frag018
+        weight: 1
+      - path: stage_beemEffect_01/frag019
+        weight: 1
+      - path: stage_beemEffect_01/frag020
+        weight: 1
+      - path: stage_beemEffect_01/frag021
+        weight: 1
+      - path: stage_beemEffect_01/frag022
+        weight: 1
+      - path: stage_beemEffect_01/frag023
+        weight: 1
+      - path: stage_beemEffect_01/frag024
+        weight: 1
+      - path: stage_beemEffect_01/frag025
+        weight: 1
+      - path: stage_beemEffect_01/frag026
+        weight: 1
+      - path: stage_beemEffect_01/J_light_05
+        weight: 1
+      - path: stage_beemEffect_01/J_wave_in
+        weight: 1
+      - path: stage_beemEffect_01/J_wave_in2
+        weight: 1
+      - path: stage_beemEffect_01/J_wave_out
+        weight: 1
+      - path: stage_beemEffect_01/J_wave_out2
+        weight: 1
+      - path: stage_beemEffect_01/Sphere001
+        weight: 1
+      - path: stage_beemEffect_01/Sphere002
+        weight: 1
+      - path: stage_beemEffect_01/Sphere003
+        weight: 1
+      - path: stage_beemEffect_01/Sphere004
+        weight: 1
+      - path: stage_beemEffect_01/Sphere005
+        weight: 1
+      - path: stage_beemEffect_01/wave_01
+        weight: 1
+      - path: stage_beemEffect_01/wave_002
+        weight: 1
+      - path: UnityAxis
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Stay
+      takeName: Take 001
+      firstFrame: 15
+      lastFrame: 25
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: stage_beemEffect_01
+        weight: 1
+      - path: stage_beemEffect_01/Beem
+        weight: 1
+      - path: stage_beemEffect_01/frag01
+        weight: 1
+      - path: stage_beemEffect_01/frag07
+        weight: 1
+      - path: stage_beemEffect_01/frag08
+        weight: 1
+      - path: stage_beemEffect_01/frag09
+        weight: 1
+      - path: stage_beemEffect_01/frag10
+        weight: 1
+      - path: stage_beemEffect_01/frag11
+        weight: 1
+      - path: stage_beemEffect_01/frag12
+        weight: 1
+      - path: stage_beemEffect_01/frag13
+        weight: 1
+      - path: stage_beemEffect_01/frag14
+        weight: 1
+      - path: stage_beemEffect_01/frag15
+        weight: 1
+      - path: stage_beemEffect_01/frag16
+        weight: 1
+      - path: stage_beemEffect_01/frag017
+        weight: 1
+      - path: stage_beemEffect_01/frag018
+        weight: 1
+      - path: stage_beemEffect_01/frag019
+        weight: 1
+      - path: stage_beemEffect_01/frag020
+        weight: 1
+      - path: stage_beemEffect_01/frag021
+        weight: 1
+      - path: stage_beemEffect_01/frag022
+        weight: 1
+      - path: stage_beemEffect_01/frag023
+        weight: 1
+      - path: stage_beemEffect_01/frag024
+        weight: 1
+      - path: stage_beemEffect_01/frag025
+        weight: 1
+      - path: stage_beemEffect_01/frag026
+        weight: 1
+      - path: stage_beemEffect_01/J_light_05
+        weight: 1
+      - path: stage_beemEffect_01/J_wave_in
+        weight: 1
+      - path: stage_beemEffect_01/J_wave_in2
+        weight: 1
+      - path: stage_beemEffect_01/J_wave_out
+        weight: 1
+      - path: stage_beemEffect_01/J_wave_out2
+        weight: 1
+      - path: stage_beemEffect_01/Sphere001
+        weight: 1
+      - path: stage_beemEffect_01/Sphere002
+        weight: 1
+      - path: stage_beemEffect_01/Sphere003
+        weight: 1
+      - path: stage_beemEffect_01/Sphere004
+        weight: 1
+      - path: stage_beemEffect_01/Sphere005
+        weight: 1
+      - path: stage_beemEffect_01/wave_01
+        weight: 1
+      - path: stage_beemEffect_01/wave_002
+        weight: 1
+      - path: UnityAxis
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: End
+      takeName: Take 001
+      firstFrame: 25
+      lastFrame: 30
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: stage_beemEffect_01
+        weight: 1
+      - path: stage_beemEffect_01/Beem
+        weight: 1
+      - path: stage_beemEffect_01/frag01
+        weight: 1
+      - path: stage_beemEffect_01/frag07
+        weight: 1
+      - path: stage_beemEffect_01/frag08
+        weight: 1
+      - path: stage_beemEffect_01/frag09
+        weight: 1
+      - path: stage_beemEffect_01/frag10
+        weight: 1
+      - path: stage_beemEffect_01/frag11
+        weight: 1
+      - path: stage_beemEffect_01/frag12
+        weight: 1
+      - path: stage_beemEffect_01/frag13
+        weight: 1
+      - path: stage_beemEffect_01/frag14
+        weight: 1
+      - path: stage_beemEffect_01/frag15
+        weight: 1
+      - path: stage_beemEffect_01/frag16
+        weight: 1
+      - path: stage_beemEffect_01/frag017
+        weight: 1
+      - path: stage_beemEffect_01/frag018
+        weight: 1
+      - path: stage_beemEffect_01/frag019
+        weight: 1
+      - path: stage_beemEffect_01/frag020
+        weight: 1
+      - path: stage_beemEffect_01/frag021
+        weight: 1
+      - path: stage_beemEffect_01/frag022
+        weight: 1
+      - path: stage_beemEffect_01/frag023
+        weight: 1
+      - path: stage_beemEffect_01/frag024
+        weight: 1
+      - path: stage_beemEffect_01/frag025
+        weight: 1
+      - path: stage_beemEffect_01/frag026
+        weight: 1
+      - path: stage_beemEffect_01/J_light_05
+        weight: 1
+      - path: stage_beemEffect_01/J_wave_in
+        weight: 1
+      - path: stage_beemEffect_01/J_wave_in2
+        weight: 1
+      - path: stage_beemEffect_01/J_wave_out
+        weight: 1
+      - path: stage_beemEffect_01/J_wave_out2
+        weight: 1
+      - path: stage_beemEffect_01/Sphere001
+        weight: 1
+      - path: stage_beemEffect_01/Sphere002
+        weight: 1
+      - path: stage_beemEffect_01/Sphere003
+        weight: 1
+      - path: stage_beemEffect_01/Sphere004
+        weight: 1
+      - path: stage_beemEffect_01/Sphere005
+        weight: 1
+      - path: stage_beemEffect_01/wave_01
+        weight: 1
+      - path: stage_beemEffect_01/wave_002
+        weight: 1
+      - path: UnityAxis
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: stage_beemEffect_01
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
