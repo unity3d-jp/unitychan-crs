@@ -97,5 +97,7 @@ float4 frag( v2f i ) : COLOR
 	combinedColor = lerp( shadowColor, combinedColor, attenuation );
 #endif
 
-	return float4_t( combinedColor, diffSamplerColor.a ) * _Color * _LightColor0;
+	float4_t finalColor = float4_t( combinedColor, diffSamplerColor.a ) * _Color;
+	finalColor.rgb *= _LightColor0.rgb;
+	return finalColor;
 }
