@@ -186,7 +186,7 @@ public class MirrorReflection : MonoBehaviour
 			m_ReflectionDepthTexture.isPowerOfTwo = true;
 			m_ReflectionDepthTexture.hideFlags = HideFlags.DontSave;
 			m_ReflectionDepthTexture.filterMode = FilterMode.Bilinear;
-	
+
 			m_OldReflectionTextureSize = m_TextureSize;
 		}
 

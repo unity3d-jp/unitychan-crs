@@ -18,7 +18,7 @@ public class Visualizer : MonoBehaviour
 	void OnWillRenderObject()
 	{
 		if (renderer == null || renderer.sharedMaterial == null) { return; }
-		Material mat = renderer.sharedMaterial;
+		Material mat = renderer.material;
 
 		if (Vector4.Dot(spectrum, spectrum) <= 1.0f)
 		{
