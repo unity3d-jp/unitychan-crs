@@ -54,7 +54,7 @@ SubShader {
 		#pragma vertex vert
 		#pragma fragment frag
 		#pragma target 3.0
-		#ifdef SHADER_API_OPENGL 
+		#ifdef SHADER_API_OPENGL
 			#pragma glsl
 		#endif
 		ENDCG

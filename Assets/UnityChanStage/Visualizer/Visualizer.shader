@@ -19,7 +19,7 @@
 	SubShader
 	{
 		Tags { "RenderType"="Opaque" }
-		
+
 		CGPROGRAM
 		#pragma surface surf Lambert
 		#pragma glsl
@@ -50,7 +50,7 @@
 		{
 			return frac(sin(p)*43758.5453);
 		}
-		
+
 		float  _gl_mod(float  a, float  b) { return a - b * floor(a/b); }
 		float2 _gl_mod(float2 a, float2 b) { return a - b * floor(a/b); }
 		float3 _gl_mod(float3 a, float3 b) { return a - b * floor(a/b); }
@@ -175,7 +175,7 @@
 			float fade_by_depth = 1.0;
 			fade_by_depth = max(1.0-refpos.y*0.3, 0.0);
 			float3 refcolor = 0.0;
-			
+
 			float g = saturate((grid_d+0.02)*50.0);
 			coord += n.xz * (g>0.0 && g<1.0 ? 1.0 : 0.0) * 0.02;
 			for(int i=0; i<9; ++i) {
@@ -188,6 +188,6 @@
 			//o.Emission = abs(refpos.yyy)*0.25;
 		}
 		ENDCG
-	} 
+	}
 	FallBack "Diffuse"
 }
