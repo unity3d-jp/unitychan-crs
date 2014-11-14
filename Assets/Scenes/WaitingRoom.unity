@@ -187,7 +187,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 164720749}
-  m_LocalRotation: {x: .707106829, y: 0, z: 0, w: .707106709}
+  m_LocalRotation: {x: .707106888, y: 0, z: 0, w: .707106769}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -318,7 +318,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraPrefab: {fileID: 100000, guid: c5a508748593a40fd9493629be5f67c3, type: 2}
-  characterPrefab: {fileID: 100238, guid: 44374dd563c03d64aaff55a08495dd9f, type: 2}
+  characterPrefab: {fileID: 100378, guid: 44374dd563c03d64aaff55a08495dd9f, type: 2}
   fadeTime: .600000024
 --- !u!4 &1323389407
 Transform:

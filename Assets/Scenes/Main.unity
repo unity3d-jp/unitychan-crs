@@ -232,7 +232,7 @@ MonoBehaviour:
   - {fileID: 100006, guid: db5cc803f9eaf4239ae82229a11bd471, type: 2}
   - {fileID: 100270, guid: c2455b87c898eb646a195c31546b1481, type: 2}
   prefabsOnTimeline:
-  - {fileID: 100238, guid: 44374dd563c03d64aaff55a08495dd9f, type: 2}
+  - {fileID: 100378, guid: 44374dd563c03d64aaff55a08495dd9f, type: 2}
   - {fileID: 100000, guid: 6f8c40c56b04d4982ae56eadeeb099fb, type: 2}
   miscPrefabs:
   - {fileID: 100000, guid: 0329b91dd79424babb86c8dbc3919134, type: 2}
