@@ -74,6 +74,60 @@ NavMeshSettings:
     widthInaccuracy: 16.666666
     heightInaccuracy: 10
   m_NavMesh: {fileID: 0}
+--- !u!1 &1000416606
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1000416608}
+  - 114: {fileID: 1000416607}
+  m_Layer: 0
+  m_Name: Scene Setup (Editor Only)
+  m_TagString: EditorOnly
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1000416607
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1000416606}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22ae93bccfb6544be844049c8151b41a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameraRigPrefab: {fileID: 100000, guid: 0f58e0fe394b24ed58b332f76fa9c423, type: 2}
+  musicPlayer: {fileID: 100000, guid: 2b9a716c1d31d45a5b906738bd5ee33e, type: 2}
+  objectNeedsActivation:
+  - {fileID: 100006, guid: db5cc803f9eaf4239ae82229a11bd471, type: 2}
+  - {fileID: 100270, guid: c2455b87c898eb646a195c31546b1481, type: 2}
+  objectsOnTimeline:
+  - {fileID: 100238, guid: 44374dd563c03d64aaff55a08495dd9f, type: 2}
+  - {fileID: 100000, guid: 6f8c40c56b04d4982ae56eadeeb099fb, type: 2}
+  mips:
+  - {fileID: 100000, guid: 0329b91dd79424babb86c8dbc3919134, type: 2}
+  - {fileID: 100000, guid: f468251a01e8242df8066e377619a712, type: 2}
+  - {fileID: 100000, guid: 0291ac2d4e1e54df6bfa4776e3683a24, type: 2}
+  - {fileID: 100000, guid: c70aff9297e6d4e9fa6e82c0038ded02, type: 2}
+  - {fileID: 100000, guid: f1efd132732334185ad79bc7263913ec, type: 2}
+  generatedItemList: []
+--- !u!4 &1000416608
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1000416606}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
 --- !u!1 &1748610909
 GameObject:
   m_ObjectHideFlags: 0
@@ -226,25 +280,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ignoreFastForward: 1
-  musicPlayerPrefab: {fileID: 100000, guid: 2b9a716c1d31d45a5b906738bd5ee33e, type: 2}
-  mainCameraRigPrefab: {fileID: 100000, guid: 0f58e0fe394b24ed58b332f76fa9c423, type: 2}
-  prefabsNeedsActivation:
-  - {fileID: 100006, guid: db5cc803f9eaf4239ae82229a11bd471, type: 2}
-  - {fileID: 100270, guid: c2455b87c898eb646a195c31546b1481, type: 2}
-  prefabsOnTimeline:
-  - {fileID: 100238, guid: 44374dd563c03d64aaff55a08495dd9f, type: 2}
-  - {fileID: 100000, guid: 6f8c40c56b04d4982ae56eadeeb099fb, type: 2}
-  miscPrefabs:
-  - {fileID: 100000, guid: 0329b91dd79424babb86c8dbc3919134, type: 2}
-  - {fileID: 100000, guid: f468251a01e8242df8066e377619a712, type: 2}
-  - {fileID: 100000, guid: f1efd132732334185ad79bc7263913ec, type: 2}
-  - {fileID: 100000, guid: c70aff9297e6d4e9fa6e82c0038ded02, type: 2}
-  - {fileID: 100000, guid: 0291ac2d4e1e54df6bfa4776e3683a24, type: 2}
   cameraPoints:
   - {fileID: 1750265709}
   - {fileID: 2112224815}
   - {fileID: 1821063586}
   overlayIntensity: 1
+  musicPlayer: {fileID: 0}
+  objectsNeedsActivation: []
+  objectsOnTimeline: []
+  cameraRig: {fileID: 0}
 --- !u!4 &2134378501
 Transform:
   m_ObjectHideFlags: 0
