@@ -13,7 +13,7 @@ public class SetupDirector : MonoBehaviour
 							objectsOnTimeline = null, 
 							mips = null;
 
-	[SerializePrivateVariables]
+	[HideInInspector]
 	public List<Object> generatedItemList = new List<Object>();
 
 	[ContextMenu("Stage Setup")]
