@@ -317,7 +317,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6860fdbdd636f4d08993225c9d97afce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraPrefab: {fileID: 100000, guid: c5a508748593a40fd9493629be5f67c3, type: 2}
+  cameraPrefab: {fileID: 100004, guid: 9ee010de23b29bc42ada72548fb4c81e, type: 2}
   characterPrefab: {fileID: 100378, guid: 44374dd563c03d64aaff55a08495dd9f, type: 2}
   fadeTime: .600000024
 --- !u!4 &1323389407

@@ -227,7 +227,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ignoreFastForward: 1
   musicPlayerPrefab: {fileID: 100000, guid: 2b9a716c1d31d45a5b906738bd5ee33e, type: 2}
-  mainCameraRigPrefab: {fileID: 100000, guid: 0f58e0fe394b24ed58b332f76fa9c423, type: 2}
+  mainCameraRigPrefab: {fileID: 100004, guid: 9ee010de23b29bc42ada72548fb4c81e, type: 2}
   prefabsNeedsActivation:
   - {fileID: 100006, guid: db5cc803f9eaf4239ae82229a11bd471, type: 2}
   - {fileID: 100270, guid: c2455b87c898eb646a195c31546b1481, type: 2}
