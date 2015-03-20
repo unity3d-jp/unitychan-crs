@@ -47,9 +47,9 @@ public class LightGear : MonoBehaviour
     void UpdateLight(float param)
     {
         if (intensity.enabled)
-            light.intensity = intensity.Evaluate(param);
+            GetComponent<Light>().intensity = intensity.Evaluate(param);
         if (enableColor)
-            light.color = colorGradient.Evaluate(param);
+            GetComponent<Light>().color = colorGradient.Evaluate(param);
     }
 }
 

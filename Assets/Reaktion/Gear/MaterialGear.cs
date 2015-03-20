@@ -55,7 +55,7 @@ public class MaterialGear : MonoBehaviour
     {
         reaktor.Initialize(this);
 
-        material = renderer.materials[materialIndex];
+        material = GetComponent<Renderer>().materials[materialIndex];
 
         UpdateMaterial(0);
     }

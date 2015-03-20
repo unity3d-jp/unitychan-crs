@@ -41,11 +41,11 @@ public class CameraGear : MonoBehaviour
     void Update()
     {
         if (fieldOfView.enabled)
-            camera.fieldOfView = fieldOfView.Evaluate(reaktor.Output);
+            GetComponent<Camera>().fieldOfView = fieldOfView.Evaluate(reaktor.Output);
 
         if (viewportWidth.enabled || viewportHeight.enabled)
         {
-            var rect = camera.rect;
+            var rect = GetComponent<Camera>().rect;
             if (viewportWidth.enabled)
             {
                 rect.width = viewportWidth.Evaluate(reaktor.Output);
@@ -56,7 +56,7 @@ public class CameraGear : MonoBehaviour
                 rect.height = viewportHeight.Evaluate(reaktor.Output);
                 rect.y = (1.0f - rect.height) * 0.5f;
             }
-            camera.rect = rect;
+            GetComponent<Camera>().rect = rect;
         }
     }
 }

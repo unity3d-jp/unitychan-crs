@@ -84,7 +84,7 @@ public class SelfDestruction : MonoBehaviour
             return timer < lifetime;
 
         // conditionType == ConditionType.ParticleSystem:
-        return particleSystem != null && particleSystem.IsAlive();
+        return GetComponent<ParticleSystem>() != null && GetComponent<ParticleSystem>().IsAlive();
     }
 
     void Start()
