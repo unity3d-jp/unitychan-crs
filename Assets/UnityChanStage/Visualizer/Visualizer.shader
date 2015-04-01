@@ -173,7 +173,7 @@
 			float3 refpos = D.xyz / D.w;
 
 			float fade_by_depth = 1.0;
-			fade_by_depth = max(1.0-refpos.y*0.3, 0.0);
+			fade_by_depth = max(1.0-abs(refpos.y)*0.3, 0.0);
 			float3 refcolor = 0.0;
 
 			float g = saturate((grid_d+0.02)*50.0);
