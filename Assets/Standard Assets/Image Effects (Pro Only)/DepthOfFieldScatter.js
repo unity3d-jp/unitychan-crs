@@ -65,7 +65,7 @@ class DepthOfFieldScatter extends PostEffectsBase
 	}
 
 	function OnEnable () {
-		camera.depthTextureMode |= DepthTextureMode.Depth;	
+		GetComponent.<Camera>().depthTextureMode |= DepthTextureMode.Depth;	
 	}	
 
 	function OnDisable()
@@ -102,7 +102,7 @@ class DepthOfFieldScatter extends PostEffectsBase
 	}		
 
 	function FocalDistance01 (worldDist : float) : float {
-		return camera.WorldToViewportPoint((worldDist-camera.nearClipPlane) * camera.transform.forward + camera.transform.position).z / (camera.farClipPlane-camera.nearClipPlane);	
+		return GetComponent.<Camera>().WorldToViewportPoint((worldDist-GetComponent.<Camera>().nearClipPlane) * GetComponent.<Camera>().transform.forward + GetComponent.<Camera>().transform.position).z / (GetComponent.<Camera>().farClipPlane-GetComponent.<Camera>().nearClipPlane);	
 	}
 
 	private function WriteCoc (fromTo : RenderTexture, fgDilate : boolean) {
@@ -157,7 +157,7 @@ class DepthOfFieldScatter extends PostEffectsBase
 					
 		// focal & coc calculations
 
-		focalDistance01 = (focalTransform) ? (camera.WorldToViewportPoint (focalTransform.position)).z / (camera.farClipPlane) : FocalDistance01 (focalLength);
+		focalDistance01 = (focalTransform) ? (GetComponent.<Camera>().WorldToViewportPoint (focalTransform.position)).z / (GetComponent.<Camera>().farClipPlane) : FocalDistance01 (focalLength);
 		dofHdrMaterial.SetVector ("_CurveParams", Vector4 (1.0f, focalSize, aperture/10.0f, focalDistance01));
 
         // possible render texture helpers

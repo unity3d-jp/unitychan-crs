@@ -13,6 +13,6 @@ public class GlobalConfig : MonoBehaviour
 
         Shader.globalMaximumLOD = shaderLOD; 
 
-        Screen.showCursor = false;
+        Cursor.visible = false;
     }
 }

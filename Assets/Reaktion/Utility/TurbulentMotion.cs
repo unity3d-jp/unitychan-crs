@@ -135,7 +135,7 @@ public class TurbulentMotion : MonoBehaviour
 
             // Apply the scale.
             if (scaleByShader)
-                renderer.material.SetVector(scalePropertyName, vs);
+                GetComponent<Renderer>().material.SetVector(scalePropertyName, vs);
             else
                 transform.localScale = Vector3.Scale(initialScale, vs);
         }

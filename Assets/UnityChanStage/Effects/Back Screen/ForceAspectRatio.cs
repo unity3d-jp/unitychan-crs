@@ -9,6 +9,6 @@ public class ForceAspectRatio : MonoBehaviour
 
     void Update()
     {
-        camera.aspect = horizontal / vertical;
+        GetComponent<Camera>().aspect = horizontal / vertical;
     }
 }

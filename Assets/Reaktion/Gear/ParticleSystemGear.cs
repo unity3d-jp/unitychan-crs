@@ -48,12 +48,12 @@ public class ParticleSystemGear : MonoBehaviour
     {
         if (burst.Update(reaktor.Output))
         {
-            particleSystem.Emit(burstNumber);
-            particleSystem.Play();
+            GetComponent<ParticleSystem>().Emit(burstNumber);
+            GetComponent<ParticleSystem>().Play();
         }
 
         if (emissionRate.enabled)
-            particleSystem.emissionRate = emissionRate.Evaluate(reaktor.Output);
+            GetComponent<ParticleSystem>().emissionRate = emissionRate.Evaluate(reaktor.Output);
 
         if (size.enabled)
             ResizeParticles(size.Evaluate(reaktor.Output));
@@ -61,15 +61,15 @@ public class ParticleSystemGear : MonoBehaviour
 
     void ResizeParticles(float newSize)
     {
-        if (tempArray == null || tempArray.Length != particleSystem.maxParticles)
-            tempArray = new ParticleSystem.Particle[particleSystem.maxParticles];
+        if (tempArray == null || tempArray.Length != GetComponent<ParticleSystem>().maxParticles)
+            tempArray = new ParticleSystem.Particle[GetComponent<ParticleSystem>().maxParticles];
 
-        var count = particleSystem.GetParticles(tempArray);
+        var count = GetComponent<ParticleSystem>().GetParticles(tempArray);
 
         for (var i = 0; i < count; i++)
             tempArray[i].size = newSize;
 
-        particleSystem.SetParticles(tempArray, count);
+        GetComponent<ParticleSystem>().SetParticles(tempArray, count);
     }
 }
 

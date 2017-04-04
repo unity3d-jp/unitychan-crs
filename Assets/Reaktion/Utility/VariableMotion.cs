@@ -197,7 +197,7 @@ public class VariableMotion : MonoBehaviour
             var so = (useDifferentials && !scaleByShader) ? initialScale : Vector3.one;
             var s = Vector3.Scale(so, Vector3.one + scale.Vector * (scale.Scalar - 1));
             if (scaleByShader)
-                renderer.material.SetVector(scalePropertyName, s);
+                GetComponent<Renderer>().material.SetVector(scalePropertyName, s);
             else
                 transform.localScale = s;
         }
