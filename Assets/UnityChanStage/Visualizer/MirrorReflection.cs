@@ -52,7 +52,7 @@ public class MirrorReflection : MonoBehaviour
 		// Render reflection
 		// Reflect camera around reflection plane
 		float d = -Vector3.Dot(normal, pos) - m_ClipPlaneOffset;
-		Vector4 reflectionPlane = new Vector4(normal.x, normal.y, normal.z, d);
+        Vector4 reflectionPlane = new Vector4(normal.x, normal.y, normal.z, d);
 
 		Matrix4x4 reflection = Matrix4x4.zero;
 		CalculateReflectionMatrix(ref reflection, reflectionPlane);
@@ -69,8 +69,9 @@ public class MirrorReflection : MonoBehaviour
 
 		reflectionCamera.cullingMask = ~(1 << 4) & m_ReflectLayers.value; // never render water layer
 		reflectionCamera.targetTexture = m_ReflectionTexture;
-		GL.SetRevertBackfacing(true);
-		reflectionCamera.transform.position = newpos;
+        //GL.SetRevertBackfacing(true);
+        GL.invertCulling = true;
+        reflectionCamera.transform.position = newpos;
 		Vector3 euler = cam.transform.eulerAngles;
 		reflectionCamera.transform.eulerAngles = new Vector3(0, euler.y, euler.z);
 		reflectionCamera.depthTextureMode = DepthTextureMode.Depth;
@@ -81,28 +82,30 @@ public class MirrorReflection : MonoBehaviour
 		m_matCopyDepth.SetPass(0);
 		DrawFullscreenQuad();
 		Graphics.SetRenderTarget(null);
+		// Graphics.Blit(m_ReflectionTexture, m_ReflectionDepthTexture, m_matCopyDepth);
 
 
 		reflectionCamera.transform.position = oldpos;
-		GL.SetRevertBackfacing(false);
-		Material[] materials = GetComponent<Renderer>().sharedMaterials;
+        //GL.SetRevertBackfacing(false);
+        GL.invertCulling = false;
+        Material[] materials = GetComponent<Renderer>().sharedMaterials;
 		foreach (Material mat in materials)
 		{
 			mat.SetTexture("_ReflectionTex", m_ReflectionTexture);
 			mat.SetTexture("_ReflectionDepthTex", m_ReflectionDepthTexture);
 		}
 
-		// Set matrix on the shader that transforms UVs from object space into screen
-		// space. We want to just project reflection texture on screen.
-		Matrix4x4 scaleOffset = Matrix4x4.TRS(
-			new Vector3(0.5f, 0.5f, 0.5f), Quaternion.identity, new Vector3(0.5f, 0.5f, 0.5f));
-		Vector3 scale = transform.lossyScale;
-		Matrix4x4 mtx = transform.localToWorldMatrix * Matrix4x4.Scale(new Vector3(1.0f / scale.x, 1.0f / scale.y, 1.0f / scale.z));
-		mtx = scaleOffset * cam.projectionMatrix * cam.worldToCameraMatrix * mtx;
-		foreach (Material mat in materials)
-		{
-			mat.SetMatrix("_ProjMatrix", mtx);
-		}
+		// // Set matrix on the shader that transforms UVs from object space into screen
+		// // space. We want to just project reflection texture on screen.
+		// Matrix4x4 scaleOffset = Matrix4x4.TRS(
+		// 	new Vector3(0.5f, 0.5f, 0.5f), Quaternion.identity, new Vector3(0.5f, 0.5f, 0.5f));
+		// Vector3 scale = transform.lossyScale;
+		// Matrix4x4 mtx = transform.localToWorldMatrix * Matrix4x4.Scale(new Vector3(1.0f / scale.x, 1.0f / scale.y, 1.0f / scale.z));
+		// mtx = scaleOffset * cam.projectionMatrix * cam.worldToCameraMatrix * mtx;
+		// foreach (Material mat in materials)
+		// {
+		// 	mat.SetMatrix("_ProjMatrix", mtx);
+		// }
 
 		// Restore pixel light count
 		if (m_DisablePixelLights)
@@ -182,6 +185,7 @@ public class MirrorReflection : MonoBehaviour
 			if (m_ReflectionDepthTexture)
 				DestroyImmediate(m_ReflectionDepthTexture);
 			m_ReflectionDepthTexture = new RenderTexture(m_TextureSize, m_TextureSize, 0, RenderTextureFormat.RHalf);
+			// m_ReflectionDepthTexture = new RenderTexture(m_TextureSize, m_TextureSize, 0, RenderTextureFormat.R8);
 			m_ReflectionDepthTexture.name = "__MirrorReflectionDepth" + GetInstanceID();
 			m_ReflectionDepthTexture.isPowerOfTwo = true;
 			m_ReflectionDepthTexture.hideFlags = HideFlags.DontSave;

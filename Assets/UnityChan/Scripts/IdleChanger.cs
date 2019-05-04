@@ -6,6 +6,7 @@ namespace UnityChan
 //
 // ↑↓キーでループアニメーションを切り替えるスクリプト（ランダム切り替え付き）Ver.3
 // 2014/04/03 N.Kobayashi
+// 2015/03/11 Revised for Unity5 (only)
 //
 
 // Require these components when using this script
@@ -56,7 +57,7 @@ namespace UnityChan
 			if (anim.GetBool ("Next")) {
 				// 現在のステートをチェックし、ステート名が違っていたらブーリアンをfalseに戻す
 				currentState = anim.GetCurrentAnimatorStateInfo (0);
-				if (previousState.nameHash != currentState.nameHash) {
+				if (previousState.fullPathHash != currentState.fullPathHash) {
 					anim.SetBool ("Next", false);
 					previousState = currentState;				
 				}
@@ -66,7 +67,7 @@ namespace UnityChan
 			if (anim.GetBool ("Back")) {
 				// 現在のステートをチェックし、ステート名が違っていたらブーリアンをfalseに戻す
 				currentState = anim.GetCurrentAnimatorStateInfo (0);
-				if (previousState.nameHash != currentState.nameHash) {
+				if (previousState.fullPathHash != currentState.fullPathHash) {
 					anim.SetBool ("Back", false);
 					previousState = currentState;
 				}
