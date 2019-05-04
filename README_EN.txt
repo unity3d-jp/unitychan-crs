@@ -4,7 +4,8 @@ Title:
 　　　　Candy Rock Star: Unity-Chan Concert Project
 
 Requirements:
-　　　　Unity 4.5.x or higher
+　　　　Unity 2017.4.25f1 LTS or higher
+　　　　Operation confirmed with Unity 2018.3.12f1 and Unity 2019.1.0f2
 
 Note:
      You need to have Unity installed on a Mac or Windows PC 

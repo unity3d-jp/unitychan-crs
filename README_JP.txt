@@ -4,7 +4,8 @@ README.TXT
 　　　　Canndy Rock Star ユニティちゃんコンサートプロジェクト
 
 対象：
-　　　　Unity4.5以上推奨
+　　　　Unity 2017.4.25f1 LTS以上推奨
+　　　　Unity 2018.3.12f1、Unity 2019.1.0f2で動作確認済み
 
 注意：
 　　　本プロジェクトを正常に起動するためには、Windows版もしくはOS X版の
