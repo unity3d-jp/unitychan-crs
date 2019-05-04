@@ -1,5 +1,7 @@
 using UnityEngine;
-using UnityEngine.PostProcessing;
+#if UNITY_2017
+    using UnityEngine.PostProcessing;
+#endif
 
 namespace UnityEditor.PostProcessing
 {
