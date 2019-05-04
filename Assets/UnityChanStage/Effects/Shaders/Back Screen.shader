@@ -1,4 +1,6 @@
-﻿Shader "Custom/Back Screen"
+﻿// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
+
+Shader "Custom/Back Screen"
 {
     Properties
     {
@@ -35,7 +37,7 @@
     v2f vert(appdata_base v)
     {
         v2f o;
-        o.position = mul(UNITY_MATRIX_MVP, v.vertex);
+        o.position = UnityObjectToClipPos(v.vertex);
         o.uv0 = TRANSFORM_TEX(v.texcoord, _MainTex);
         o.uv1 = TRANSFORM_TEX(v.texcoord, _StripeTex);
         return o;

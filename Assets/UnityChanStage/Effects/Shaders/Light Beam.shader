@@ -1,4 +1,7 @@
-﻿Shader "Custom/Light Beam"
+﻿// Upgrade NOTE: replaced '_Object2World' with 'unity_ObjectToWorld'
+// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
+
+Shader "Custom/Light Beam"
 {
     Properties
     {
@@ -39,15 +42,15 @@
     {
         v2f o;
 
-        o.position = mul(UNITY_MATRIX_MVP, v.vertex);
+        o.position = UnityObjectToClipPos(v.vertex);
 
         o.uv0 = TRANSFORM_TEX(v.texcoord, _MainTex);
 
-        float4 wp = mul(_Object2World, v.vertex);
+        float4 wp = mul(unity_ObjectToWorld, v.vertex);
         o.uv1 = wp.xy * _NoiseScale.xy + _NoiseSpeed.xy * _Time.y;
         o.uv2 = wp.xy * _NoiseScale.zw + _NoiseSpeed.zw * _Time.y;
 		o.world_position = v.vertex;
-		o.normal = normalize(mul(_Object2World, float4(v.normal.xyz,0.0)));
+		o.normal = normalize(mul(unity_ObjectToWorld, float4(v.normal.xyz,0.0)));
 
         return o;
     }
