@@ -37,7 +37,8 @@ public class ObjectParticleSystem : MonoBehaviour
 
     void Start()
     {
-        var count = Mathf.Min(maxParticles, GetComponent<ParticleSystem>().maxParticles);
+        //var count = Mathf.Min(maxParticles, GetComponent<ParticleSystem>().maxParticles);
+        var count = Mathf.Min(maxParticles, GetComponent<ParticleSystem>().main.maxParticles);
 
         particles = new ParticleSystem.Particle[count];
         pool = new GameObject[count];
@@ -59,8 +60,10 @@ public class ObjectParticleSystem : MonoBehaviour
 
             o.transform.position = prefab.transform.position + p.position;
             o.transform.localRotation = Quaternion.AngleAxis(p.rotation, p.axisOfRotation) * prefab.transform.rotation;
-            o.transform.localScale = prefab.transform.localScale * p.size;
-        }
+            //o.transform.localScale = prefab.transform.localScale * p.size;
+            o.transform.localScale = prefab.transform.localScale * p.startSize;
+            //o.transform.localScale = prefab.transform.localScale * p.GetCurrentSize;
+            }
 
         for (var i = count; i < pool.Length; i++)
             pool[i].GetComponent<Renderer>().enabled = false;

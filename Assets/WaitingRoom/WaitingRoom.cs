@@ -1,5 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
+
 
 public class WaitingRoom : MonoBehaviour
 {
@@ -34,7 +36,7 @@ public class WaitingRoom : MonoBehaviour
             for (var layer = 0; layer < animator.layerCount; layer++)
             {
                 var info = animator.GetCurrentAnimatorStateInfo(layer);
-                animator.CrossFade(info.nameHash, 0.5f / info.length, layer, 0);
+                animator.CrossFade(info.fullPathHash, 0.5f / info.length, layer, 0);
             }
         }
     }
@@ -47,7 +49,9 @@ public class WaitingRoom : MonoBehaviour
         {
             // White out.
             overlayIntensity = Mathf.Min(1.0f, overlayIntensity + Time.deltaTime / fadeTime);
-            if (overlayIntensity == 1.0f) Application.LoadLevel(1);
+//            if (overlayIntensity == 1.0f) Application.LoadLevel(1);
+            if (overlayIntensity == 1.0f) SceneManager.LoadScene(1);
+
         }
         else
         {

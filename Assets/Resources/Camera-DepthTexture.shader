@@ -1,3 +1,5 @@
+// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
+
 Shader "Hidden/Camera-DepthTexture" {
 Properties {
 	_MainTex ("", 2D) = "white" {}
@@ -22,7 +24,7 @@ struct v2f {
 };
 v2f vert( appdata_base v ) {
     v2f o;
-    o.pos = mul(UNITY_MATRIX_MVP, v.vertex);
+    o.pos = UnityObjectToClipPos(v.vertex);
     UNITY_TRANSFER_DEPTH(o.depth);
     return o;
 }
@@ -49,7 +51,7 @@ struct v2f {
 };
 v2f vert( appdata_base v ) {
     v2f o;
-    o.pos = mul(UNITY_MATRIX_MVP, v.vertex);
+    o.pos = UnityObjectToClipPos(v.vertex);
     UNITY_TRANSFER_DEPTH(o.depth);
     return o;
 }
@@ -77,7 +79,7 @@ struct v2f {
 uniform float4 _MainTex_ST;
 v2f vert( appdata_base v ) {
     v2f o;
-    o.pos = mul(UNITY_MATRIX_MVP, v.vertex);
+    o.pos = UnityObjectToClipPos(v.vertex);
 	o.uv = TRANSFORM_TEX(v.texcoord, _MainTex);
     UNITY_TRANSFER_DEPTH(o.depth);
     return o;
@@ -114,7 +116,7 @@ v2f vert( appdata_full v ) {
     v2f o;
     TreeVertBark(v);
 	
-	o.pos = mul( UNITY_MATRIX_MVP, v.vertex );
+	o.pos = UnityObjectToClipPos( v.vertex );
     UNITY_TRANSFER_DEPTH(o.depth);
     return o;
 }
@@ -146,7 +148,7 @@ v2f vert( appdata_full v ) {
     v2f o;
     TreeVertLeaf(v);
 	
-	o.pos = mul( UNITY_MATRIX_MVP, v.vertex );
+	o.pos = UnityObjectToClipPos( v.vertex );
 	o.uv = v.texcoord.xy;
     UNITY_TRANSFER_DEPTH(o.depth);
     return o;
@@ -184,7 +186,7 @@ struct appdata {
 v2f vert( appdata v ) {
 	v2f o;
 	TerrainAnimateTree(v.vertex, v.color.w);
-	o.pos = mul( UNITY_MATRIX_MVP, v.vertex );
+	o.pos = UnityObjectToClipPos( v.vertex );
     UNITY_TRANSFER_DEPTH(o.depth);
 	return o;
 }
@@ -220,7 +222,7 @@ struct appdata {
 v2f vert( appdata v ) {
 	v2f o;
 	TerrainAnimateTree(v.vertex, v.color.w);
-	o.pos = mul( UNITY_MATRIX_MVP, v.vertex );
+	o.pos = UnityObjectToClipPos( v.vertex );
 	o.uv = v.texcoord.xy;
     UNITY_TRANSFER_DEPTH(o.depth);
 	return o;
@@ -256,7 +258,7 @@ struct v2f {
 v2f vert (appdata_tree_billboard v) {
 	v2f o;
 	TerrainBillboardTree(v.vertex, v.texcoord1.xy, v.texcoord.y);
-	o.pos = mul (UNITY_MATRIX_MVP, v.vertex);
+	o.pos = UnityObjectToClipPos (v.vertex);
 	o.uv.x = v.texcoord.x;
 	o.uv.y = v.texcoord.y > 0;
     UNITY_TRANSFER_DEPTH(o.depth);
@@ -296,7 +298,7 @@ v2f vert (appdata_full v) {
 	v2f o;
 	WavingGrassBillboardVert (v);
 	o.color = v.color;
-	o.pos = mul (UNITY_MATRIX_MVP, v.vertex);
+	o.pos = UnityObjectToClipPos (v.vertex);
 	o.uv = v.texcoord.xy;
     UNITY_TRANSFER_DEPTH(o.depth);
 	return o;
@@ -334,7 +336,7 @@ v2f vert (appdata_full v) {
 	v2f o;
 	WavingGrassVert (v);
 	o.color = v.color;
-	o.pos = mul (UNITY_MATRIX_MVP, v.vertex);
+	o.pos = UnityObjectToClipPos (v.vertex);
 	o.uv = v.texcoord;
     UNITY_TRANSFER_DEPTH(o.depth);
 	return o;
