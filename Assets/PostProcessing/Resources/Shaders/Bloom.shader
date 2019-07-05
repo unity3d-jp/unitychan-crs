@@ -112,7 +112,7 @@ Shader "Hidden/Post FX/Bloom"
             rq = _Curve.z * rq * rq;
 
             // Combine and apply the brightness response curve.
-            m *= max(rq, br - _Threshold) / max(br, 1e-5);
+            m *= max(rq, br - _Threshold) / max(br, 1e-4);
 
             return EncodeHDR(m);
         }
