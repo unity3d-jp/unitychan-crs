@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 
+namespace UnityChan.ImageEffects
+{
     [ExecuteInEditMode]
     [RequireComponent (typeof(Camera))]
     public class PostEffectsBase : MonoBehaviour
@@ -110,14 +112,11 @@ using UnityEngine;
             supportHDRTextures = SystemInfo.SupportsRenderTextureFormat(RenderTextureFormat.ARGBHalf);
             supportDX11 = SystemInfo.graphicsShaderLevel >= 50 && SystemInfo.supportsComputeShaders;
 
-//With Unity 2019.2 and up, supportsImageEffects always returns true
-#if !UNITY_2019_2_OR_NEWER
             if (!SystemInfo.supportsImageEffects)
 			{
                 NotSupported ();
                 return false;
             }
-#endif
 
             if (needDepth && !SystemInfo.SupportsRenderTextureFormat (RenderTextureFormat.Depth))
 			{
@@ -259,3 +258,4 @@ using UnityEngine;
             GL.PopMatrix();
         }
     }
+}
