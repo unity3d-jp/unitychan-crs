@@ -8,8 +8,8 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: CEL_body_FrontCulling
-  m_Shader: {fileID: 4800000, guid: 1f248db3b28fc5f44aabd7aca618bd1e, type: 3}
-  m_ShaderKeywords: _EMISSIVE_SIMPLE _OUTLINE_NML
+  m_Shader: {fileID: 4800000, guid: 183ea557143786346b1bfc862ad22636, type: 3}
+  m_ShaderKeywords: _ _EMISSIVE_SIMPLE _OUTLINE_NML
   m_LightmapFlags: 5
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -87,6 +87,10 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _ShadingGradeMap:
+        m_Texture: {fileID: 2800000, guid: a14676f38030cbf41a25a7f445fd876d, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     m_Floats:
     - _1st2nd_Shades_Feather: 0.0001
     - _1st_ShadeColor_Feather: 0.008
@@ -100,6 +104,7 @@ Material:
     - _BaseShade_Feather: 0.008
     - _Base_Speed: 0
     - _BlurLevelMatcap: 0
+    - _BlurLevelSGM: 0
     - _BumpScale: 1
     - _BumpScaleMatcap: 1
     - _CameraRolling_Stabilizer: 0
@@ -169,12 +174,13 @@ Material:
     - _Tweak_MatCapUV: 0
     - _Tweak_MatcapMaskLevel: -0.1
     - _Tweak_RimLightMaskLevel: 0
+    - _Tweak_ShadingGradeMapLevel: 0
     - _Tweak_SystemShadowsLevel: 0.21
     - _Unlit_Intensity: 1
     - _Use_1stAs2nd: 1
     - _Use_BaseAs1st: 0
-    - _simpleUI: 0
-    - _utsTechnique: 0
+    - _simpleUI: 2
+    - _utsTechnique: 1
     - _utsVersion: 2.075
     m_Colors:
     - _1st_ShadeColor: {r: 1, g: 1, b: 1, a: 1}

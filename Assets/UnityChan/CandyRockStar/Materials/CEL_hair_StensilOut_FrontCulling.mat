@@ -9,7 +9,7 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: CEL_hair_StensilOut_FrontCulling
   m_Shader: {fileID: 4800000, guid: f937ea4ce96dfbe448afc0fb671198e5, type: 3}
-  m_ShaderKeywords: _ _EMISSIVE_SIMPLE _OUTLINE_NML
+  m_ShaderKeywords: _EMISSIVE_SIMPLE _OUTLINE_NML
   m_LightmapFlags: 5
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -44,7 +44,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: b7043b7f5f3dd7b4cbe698c6bcef58ab, type: 3}
+        m_Texture: {fileID: 2800000, guid: e8fe091feafe0544d9781c44d13b0be2, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MatCap_Sampler:
@@ -172,14 +172,14 @@ Material:
     - _Tweak_RimLightMaskLevel: 0
     - _Tweak_SystemShadowsLevel: 0.118
     - _Unlit_Intensity: 1
-    - _Use_1stAs2nd: 1
+    - _Use_1stAs2nd: 0
     - _Use_BaseAs1st: 1
-    - _simpleUI: 0
+    - _simpleUI: 2
     - _utsTechnique: 0
     - _utsVersion: 2.075
     m_Colors:
-    - _1st_ShadeColor: {r: 1, g: 0.8057848, b: 0.6367924, a: 1}
-    - _2nd_ShadeColor: {r: 0.9811321, g: 0.6584099, b: 0.5784977, a: 1}
+    - _1st_ShadeColor: {r: 1, g: 0.7746276, b: 0.5801887, a: 1}
+    - _2nd_ShadeColor: {r: 0.9245283, g: 0.44045925, b: 0.47842532, a: 1}
     - _Ap_RimLightColor: {r: 0.086507656, g: 0.45005348, b: 0.6792453, a: 1}
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}

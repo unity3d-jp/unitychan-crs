@@ -2,35 +2,29 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!21 &2100000
 Material:
-  serializedVersion: 3
+  serializedVersion: 6
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_Name: Stage Light
   m_Shader: {fileID: 4800000, guid: 48057483e2ef641a48c52b0b6818bf37, type: 3}
-  m_ShaderKeywords: []
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
   m_SavedProperties:
-    serializedVersion: 2
+    serializedVersion: 3
     m_TexEnvs:
-      data:
-        first:
-          name: _MainTex
-        second:
-          m_Texture: {fileID: 0}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     m_Floats:
-      data:
-        first:
-          name: _Amplitude
-        second: 4
+    - _Amplitude: 4
     m_Colors:
-      data:
-        first:
-          name: _Color
-        second: {r: .360000014, g: .206280008, b: 0, a: 1}
-      data:
-        first:
-          name: _Emission
-        second: {r: 1, g: .693236589, b: .286764681, a: 0}
+    - _Color: {r: 0.36, g: 0.20628001, b: 0, a: 1}
+    - _Emission: {r: 0.4440703, g: 0.28627455, b: 1, a: 0}

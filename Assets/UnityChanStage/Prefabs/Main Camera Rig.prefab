@@ -261,14 +261,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a6f0b0773f6fbe4ebaaa0eff2d31199, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mode: 3
-  sensitivityDepth: 1
-  sensitivityNormals: 1
-  edgeExp: 1
-  sampleDist: 1
-  edgesColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-  filterPower: 0.3
-  threshold: 0.5
+  mode: 1
+  sensitivityDepth: 1.18
+  sensitivityNormals: 0.6
+  edgeExp: 0.3
+  sampleDist: 2
+  edgesColor: {r: 0.83137256, g: 0.3490196, b: 0.6316315, a: 1}
+  filterPower: 0.42
+  threshold: 0.42
   edgesOnly: 0
   edgeDetectShader: {fileID: 4800000, guid: 25f3ae0d0271490419a188afd866a647, type: 3}
 --- !u!114 &114822364563290244
