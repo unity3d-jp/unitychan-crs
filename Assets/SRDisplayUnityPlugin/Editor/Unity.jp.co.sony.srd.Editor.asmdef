@@ -1,0 +1,17 @@
+﻿{
+    "name": "Unity.jp.co.sony.srd.Editor",
+    "references": [
+        "Unity.jp.co.sony.srd"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

@@ -1,0 +1,15 @@
+﻿{
+    "name": "Unity.jp.co.sony.srd.Sample.UISampleApp",
+    "references": [
+        "Unity.jp.co.sony.srd"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

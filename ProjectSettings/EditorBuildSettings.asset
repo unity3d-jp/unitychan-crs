@@ -7,3 +7,7 @@ EditorBuildSettings:
   m_Scenes:
   - enabled: 1
     path: Assets/Scenes/Main.unity
+    guid: eac708282bd3644f08ee300328f7e486
+  m_configObjects:
+    com.unity.mars-ar-foundation-providers.xr_subsystem_settings: {fileID: 11400000,
+      guid: 9becb2a4c15de4948a07e65d001ddbba, type: 2}
