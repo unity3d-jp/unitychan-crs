@@ -1,7 +1,7 @@
 Unity-Chan "Candy Rock Star" Public Repository
 ----------------------------------------------
 Sony Spatial Reality Display version
-- [Sony Spatial Reality Display]: https://www.sony.net/Products/Developer-Spatial-Reality-display/jp/develop/Overview.html
+- [Sony Spatial Reality Display][Sony SRD]
 
 
 ![Screenshot][Screenshot]
@@ -18,3 +18,4 @@ Sony Spatial Reality Display version
 [Readme JP]:  https://github.com/unity3d-jp/unitychan-crs/blob/master/README_JP.txt
 [Readme EN]:  https://github.com/unity3d-jp/unitychan-crs/blob/master/README_EN.txt
 [Wiki]:       https://github.com/unity3d-jp/unitychan-crs/wiki
+[Sony SRD]:   https://www.sony.net/Products/Developer-Spatial-Reality-display/jp/develop/Overview.html
