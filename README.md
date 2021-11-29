@@ -1,5 +1,8 @@
 Unity-Chan "Candy Rock Star" Public Repository
 ----------------------------------------------
+Sony Spatial Reality Display version
+- [Sony Spatial Reality Display]: https://www.sony.net/Products/Developer-Spatial-Reality-display/jp/develop/Overview.html
+
 
 ![Screenshot][Screenshot]
 

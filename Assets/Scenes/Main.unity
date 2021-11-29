@@ -260,6 +260,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1102502084710746372, guid: 0d4a692a29b936c458e16d4ce61341a7,
+        type: 3}
+      propertyPath: m_TagString
+      value: Watcher
+      objectReference: {fileID: 0}
     - target: {fileID: 1275831002520144431, guid: 0d4a692a29b936c458e16d4ce61341a7,
         type: 3}
       propertyPath: m_RootOrder
